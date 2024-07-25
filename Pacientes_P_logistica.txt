@@ -1,0 +1,27 @@
+Supongamos que tienes un conjunto de datos que contiene información sobre pacientes y deseas predecir si un paciente tiene una enfermedad (1) o no (0) en función de algunas características médicas, como la edad y los niveles de colesterol.
+
+Tu tarea es desarrollar una función llamada regresion_logistica que tome estos datos como entrada y ajuste un modelo de regresión logística para la clasificación binaria.
+
+def regresion_logistica(datos):
+ 
+
+# Ejemplo de uso con datos de pacientes
+data = {
+    'Edad': [50, 35, 65, 28, 60],
+    'Colesterol': [180, 150, 210, 130, 190],
+    'Enfermedad': [1, 0, 1, 0, 1]
+}
+ 
+df = pd.DataFrame(data)
+modelo_regresion_logistica = regresion_logistica(df)
+ 
+# Estimaciones de clasificación binaria para nuevos datos
+nuevos_datos = pd.DataFrame({'Edad': [45, 55], 'Colesterol': [170, 200]})
+estimaciones_clasificacion = modelo_regresion_logistica.predict(nuevos_datos)
+print("Estimaciones de Clasificación:")
+print(estimaciones_clasificacion)
+
+
+Resultados:
+Estimaciones de Clasificación:
+[1 1]
