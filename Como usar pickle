@@ -1,0 +1,4 @@
+Se pueden guardar y recuperar modelos entrenados de ficheros Pickle
+Primero se importara pickle
+Para guardarlo se usa la forma escritura(write) binaria, por tanto, wb
+Para leer un fichero que contenga el modelo, se crea un nueva variable) en el ejemplo modelo2) y el fichero se lee, al ser binario de ra lorma rb
